@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*{
+  font-size: 18px;
+  font-weight: 600;
+}
+li{
+  list-style: none;
+  padding: 5px 7px;
+  border: 1px solid #000;
+  margin: 10px;
+}
