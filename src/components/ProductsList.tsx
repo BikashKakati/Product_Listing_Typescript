@@ -2,22 +2,21 @@ import React from 'react';
 import { useDispatch } from "react-redux";
 import { addToCart } from '../redux/productSlice';
 
-interface Quantity {
+type Quantity = {
     large: number;
     medium: number;
     small: number;
 }
-interface ProductData {
-    product: {
+type ProductData = {
         id: number,
         title: string,
         description: string,
         price: number,
         quantity: { large: number, medium: number, small: number },
-    }
+
 }
 
-const ProductsList: React.FC<ProductData> = ({ product }) => {
+const ProductsList= ({product}:{product:ProductData}) => {
     const Dispatch = useDispatch();
     const {title, description, price, quantity } = product;
 
